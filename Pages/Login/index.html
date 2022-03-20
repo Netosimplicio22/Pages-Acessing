@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="../../Style/global.css">
+    <title>Login</title>
+</head>
+<body>
+    <div class="contaneir-principal">
+        <div class="background-contaneir">
+            <img src="../../Assets/bac.jpg" alt="mulher mexendo no computador">
+        </div>
+        <main>
+            <form>
+                <fieldset>
+                    <legend>      
+                        Fazer Login
+                    </legend>
+                    <div class="input-block">
+                        <label for="email" id="lab1">E-mail</label>
+                        <input type="email" name="email" id="email" placeholder="E-mail" autocomplete="email" maxlength="255" onkeydown="press1()" onkeyup="depress1()">
+                    </div>
+                    <div class="input-block">
+                        <label for="password" id="lab2">Senha</label>
+                        <input type="password" name="password" id="password" placeholder="Senha" autocomplete="current-password" maxlength="100" onkeydown="press2()" onkeyup="depress2()">
+                        <div class="span">
+                            <span id="span1" onclick="mostrar()">
+                                Mostrar
+                            </span>
+                        </div>
+                        <div class="span">
+                            <span id="span2" onclick="ocultar()">
+                                Ocultar
+                            </span>
+                        </div>
+                    </div>
+                    <div class="input-group">
+                        <div class="checkbox">
+                            <input type="checkbox" name="box" id="box">
+                            <label for="box">Lembrar-me</label>
+                        </div>
+                        <div class="forgot-pass">
+                            <a href="../Forgot Password/index.html">Esqueci minha senha</a>
+                        </div>
+                    </div>
+                    <button type="submit">
+                        Entrar
+                    </button>
+                    <div class="cadastro">
+                        <a href="../Sign In/index.html">Cadastrar-me</a>
+                    </div>
+                </fieldset>
+            </form>
+        </main>
+    </div>
+
+    <script src="./script.js"></script>
+</body>
+</html>

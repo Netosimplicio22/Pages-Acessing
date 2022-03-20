@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="../../Style/global.css">
+    <title>Redefinir senha</title>
+</head>
+<body>
+    <div class="contaneir-principal">
+        <div class="background-contaneir">
+            <img src="../../Assets/bac.jpg" alt="mulher mexendo no computador">
+        </div>
+        <main>
+            <form>
+                <fieldset>
+                    <legend>      
+                        Redefinir senha
+                    </legend>
+                    <div class="input-block">
+                        <label for="email" id="lab1">E-mail</label>
+                        <input type="email" name="email" id="email" placeholder="E-mail" autocomplete="email" maxlength="255" required onkeydown="press1()" onkeyup="depress1()">
+                    </div>
+                    <button type="submit">
+                        Enviar
+                    </button>
+                </fieldset>
+            </form>
+        </main>
+    </div>
+
+    <script src="./script.js"></script>
+</body>
+</html>

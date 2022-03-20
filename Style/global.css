@@ -1,0 +1,35 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;700&family=Roboto:wght@400;700&family=Ubuntu:wght@400;700&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    outline: none;
+    text-decoration: none;
+}
+
+:root{
+    font-size: 16px;
+}
+
+@media (max-width:1196px) {
+
+    .contaneir-principal .background-contaneir{
+        width: 50%;
+    }
+
+    .contaneir-principal main{
+        width: 50%;
+    }
+}
+
+@media (max-width:800px) {
+
+    .contaneir-principal .background-contaneir{
+        width: 0%;
+    }
+
+    .contaneir-principal main{
+        width: 100%;
+    }
+}
